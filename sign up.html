@@ -4,13 +4,14 @@
     <head><title>Form</title></head>
 
     <style>
-        div#form{background-color:cyan; text-align:center; padding: 3mm 10mm 10mm 10mm; }
+        div#form{background-color:cyan; text-align:justify; padding: 3mm 10mm 10mm 20mm; margin:20mm 90mm 20mm 90mm; border-radius: 20px;box-shadow: -10px 10px 2px gray;}
         form#register{font-size: 8mm ; }
         input{font-size: 5mm;}
         option{font-size: 5mm;}
         select{font-size: 5mm;}
-
+        marquee{font-size: 10mm; font-weight: bold; }
         input:hover{border-color: darkblue ; border-width: 1mm;}
+        body{background-color: rgba(0, 255, 255, 0.384);}
     </style>
 
     <body>
@@ -20,7 +21,7 @@
                Username: <input type="text" name="Usernmae" maxlength="30" placeholder="Enter User name"  required ><br>
                 Password: <input type="password" name="pass1" placeholder="Enter Password" required><br>
                 Confirm Password: <input type="password" name="pass2" placeholder="Re-Enter password" required><br>
-				Aadhar Number: <input type="aadhar number" name="aadhar"><br>
+				Aadhar Number: <input type="aadhar number" name="aadhar" required minlength="12" maxlength="12" ><br>
                 Email: <input type="email" name="email"><br>
                 DOB: <input type="date"  name="date"><br>
 
@@ -28,11 +29,13 @@
                 <input type="radio" name="sex" value="female">Female<br>
                
                         
-                   <br> <input type="submit" value="submit">
+                   <br> <input type="submit" value="Sign Up">
             </form>
 
         </div>
-
+        
+        <br>
+        <marquee>Wear Mask! Sanetize Hands! Maintain Distance</marquee>
 
 
     </body>
